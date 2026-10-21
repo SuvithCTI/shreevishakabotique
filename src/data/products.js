@@ -315,20 +315,20 @@ export const PRODUCTS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: 'Priyanka Sundaram',
-    location: 'Bangalore, Karnataka',
+    name: 'Sowmya Natarajan',
+    location: 'Coimbatore, Tamil Nadu',
     rating: 5,
-    date: 'February 2026',
-    comment: 'I ordered my wedding muhurtham Kanchipuram silk saree from Shree Vishaka Boutique. The peacock teal color and the pure gold zari weave were even more breathtaking in person. Truly heirloom quality!',
+    date: 'October 2026',
+    comment: 'Visited the boutique on Chettipalayam Road for my sister’s wedding muhurtham. The pure Kanchipuram silk collection with gold zari is truly breathtaking. Custom blouse stitching was delivered in 3 days with a 100% flawless fit!',
     verified: true
   },
   {
     id: 2,
-    name: 'Dr. Ananya Sharma',
-    location: 'Mumbai, Maharashtra',
+    name: 'Kavitha Ramesh',
+    location: 'Tiruppur, Tamil Nadu',
     rating: 5,
-    date: 'January 2026',
-    comment: 'The blouse tailoring service is unmatched. I sent my custom measurements online and the fit was 100% flawless. The Aari embroidery detail is so delicate and elegant.',
+    date: 'September 2026',
+    comment: 'Got my bridal Aari embroidery blouse designed here. The neck cutout and pearl detailing match my reception saree wonderfully. Best boutique near Tiruppur and Palladam for bespoke drapes and tailoring.',
     verified: true
   },
   {
@@ -336,8 +336,8 @@ export const TESTIMONIALS = [
     name: 'Meera Krishnan',
     location: 'Chennai, Tamil Nadu',
     rating: 5,
-    date: 'March 2026',
-    comment: 'Packaging was like opening a royal gift. Pure silk mark certification included, fall & pico done perfectly, and reached in 2 days. Will never buy sarees anywhere else now.',
+    date: 'October 2026',
+    comment: 'Ordered pure soft silk and festive drapes through WhatsApp video call. Parcel reached Chennai within 2 days with authentic Silk Mark certification, perfect fall & pico, and royal gift packaging.',
     verified: true
   }
 ];

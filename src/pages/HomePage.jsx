@@ -75,17 +75,17 @@ export default function HomePage({
     <div className="bg-[#FAF7F2] text-[#2C2926] overflow-hidden">
       
       {/* 1. HERO BANNER - Full Size Edge-to-Edge */}
-      <section className="relative w-full overflow-hidden bg-[#062422] border-b border-[#D4AF37]/30 min-h-[520px] sm:min-h-[640px] lg:min-h-[720px] flex items-center">
+      <section className="relative w-full overflow-hidden bg-[#062422] border-b border-[#D4AF37]/30 min-h-[calc(100vh-120px)] min-h-[calc(100svh-120px)] sm:min-h-[640px] lg:min-h-[720px] flex items-end sm:items-center">
         
         {/* Background Model Image on the Right / Centered on Mobile */}
         <div className="absolute inset-0 z-0">
           <img 
             src={heroModelImg} 
             alt="Model in emerald green silk saree" 
-            className="w-full h-full object-cover object-[53%_center] sm:object-[center_right] lg:object-[80%_center]"
+            className="w-full h-full object-cover object-[52%_15%] sm:object-[center_right] lg:object-[80%_center]"
           />
-          {/* Smooth Gradient Overlay for Contrast: Centered dark vignette on mobile, Left-to-right on desktop */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#062422]/95 via-[#062422]/70 to-[#062422]/55 sm:hidden" />
+          {/* Smooth Gradient Overlay for Contrast: Soft bottom fade on mobile so model's face & jewelry shine, Left-to-right on desktop */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#062422] via-[#062422]/80 via-45% to-transparent sm:hidden" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#062422] via-[#062422]/75 to-transparent hidden sm:block" />
         </div>
 
@@ -94,15 +94,15 @@ export default function HomePage({
           <FiligreeOrnament variant="vertical-vine" className="h-full w-full" />
         </div>
 
-        {/* Hero Content: Centered on Mobile, Left-aligned on Desktop */}
-        <div className="w-full max-w-[1720px] mx-auto px-5 sm:px-14 lg:px-20 xl:px-24 relative z-10 py-12 sm:py-24 lg:py-28">
-          <div className="max-w-xl md:max-w-2xl space-y-5 sm:space-y-8 text-center sm:text-left mx-auto sm:mx-0">
-            <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#FAF0CD] font-normal leading-[1.14] tracking-wide text-center sm:text-left">
+        {/* Hero Content: Positioned at Bottom on Mobile so Model is fully visible, Left-aligned on Desktop */}
+        <div className="w-full max-w-[1720px] mx-auto px-5 sm:px-14 lg:px-20 xl:px-24 relative z-10 pt-16 pb-8 sm:py-24 lg:py-28">
+          <div className="max-w-xl md:max-w-2xl space-y-3.5 sm:space-y-8 text-center sm:text-left mx-auto sm:mx-0">
+            <h1 className="font-serif text-2xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#FAF0CD] font-normal leading-[1.18] tracking-wide text-center sm:text-left">
               Timeless Elegance <br />
               <span className="italic font-light text-[#ECC876]">in Every Drape</span>
             </h1>
 
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#ECC876]/90 font-light tracking-wide flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-1">
+            <p className="text-[11px] sm:text-sm md:text-base lg:text-lg text-[#ECC876]/90 font-light tracking-wide flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-1">
               <span>Traditional Sarees</span>
               <span className="text-[#D4AF37]/60">•</span>
               <span>Designer Blouses</span>
@@ -110,16 +110,16 @@ export default function HomePage({
               <span>Festive Wear</span>
             </p>
 
-            <div className="pt-2 sm:pt-4 flex justify-center sm:justify-start">
+            <div className="pt-1 sm:pt-4 flex justify-center sm:justify-start">
               <button
                 onClick={() => {
                   setActivePage('collections');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="px-7 sm:px-8 py-3.5 bg-[#082928]/90 hover:bg-[#082928] border border-[#ECC876] text-[#ECC876] hover:text-[#FAF0CD] rounded-lg text-xs sm:text-sm font-medium tracking-wide transition-all duration-300 shadow-lg inline-flex items-center gap-2.5 sm:gap-3 group"
+                className="px-6 py-2.5 sm:px-8 sm:py-3.5 bg-[#082928]/90 hover:bg-[#082928] border border-[#ECC876] text-[#ECC876] hover:text-[#FAF0CD] rounded-lg text-xs sm:text-sm font-medium tracking-wide transition-all duration-300 shadow-lg inline-flex items-center gap-2 sm:gap-3 group"
               >
                 <span>Explore Collections</span>
-                <span className="transition-transform duration-300 group-hover:translate-x-1 font-serif text-base">→</span>
+                <span className="transition-transform duration-300 group-hover:translate-x-1 font-serif text-sm sm:text-base">→</span>
               </button>
             </div>
           </div>
