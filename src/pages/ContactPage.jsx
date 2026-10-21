@@ -79,7 +79,7 @@ export default function ContactPage() {
           
           {/* COLUMN 1: "Send Us a Message" Form matching mockup */}
           <div className="lg:col-span-6 bg-white p-6 sm:p-10 rounded-2xl border border-[#D4AF37]/30 shadow-md">
-            <h2 className="font-serif text-2xl text-[#082928] font-medium mb-6">
+            <h2 className="font-serif text-3xl text-[#082928] font-medium mb-6">
               Send Us a Message
             </h2>
 
@@ -126,7 +126,7 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Name */}
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-[#082928] mb-1">
                     Name <span className="text-rose-600">*</span>
                   </label>
                   <input
@@ -135,13 +135,13 @@ export default function ContactPage() {
                     placeholder="Your full name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-2.5 text-sm bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all"
+                    className="w-full px-4 py-2.5 text-base text-[#082928] placeholder:text-gray-600 bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all"
                   />
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-[#082928] mb-1">
                     Email <span className="text-rose-600">*</span>
                   </label>
                   <input
@@ -150,13 +150,13 @@ export default function ContactPage() {
                     placeholder="your.email@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 text-sm bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all"
+                    className="w-full px-4 py-2.5 text-base text-[#082928] placeholder:text-gray-600 bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all"
                   />
                 </div>
 
                 {/* Phone */}
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-[#082928] mb-1">
                     Phone Number
                   </label>
                   <input
@@ -164,13 +164,13 @@ export default function ContactPage() {
                     placeholder="+91 63693 74108"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-2.5 text-sm bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all"
+                    className="w-full px-4 py-2.5 text-base text-[#082928] placeholder:text-gray-600 bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all"
                   />
                 </div>
 
                 {/* Message */}
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-[#082928] mb-1">
                     Message <span className="text-rose-600">*</span>
                   </label>
                   <textarea
@@ -179,14 +179,14 @@ export default function ContactPage() {
                     placeholder="Your message, custom blouse requests, or wedding styling dates..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 text-sm bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all resize-none"
+                    className="w-full px-4 py-2.5 text-base text-[#082928] placeholder:text-gray-600 bg-[#FAF7F2] border border-gray-300 rounded-md focus:outline-none focus:border-[#082928] focus:bg-white transition-all resize-none"
                   />
                 </div>
 
                 {/* Submit button connecting to WhatsApp */}
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-[#082928] hover:bg-[#051C1C] text-[#ECC876] font-semibold text-xs tracking-widest uppercase rounded shadow-md flex items-center justify-center gap-2 transition-all duration-300 cursor-pointer group"
+                  className="w-full py-3.5 bg-[#082928] hover:bg-[#051C1C] text-[#ECC876] font-semibold text-sm tracking-widest uppercase rounded shadow-md flex items-center justify-center gap-2 transition-all duration-300 cursor-pointer group"
                 >
                   <MessageCircle className="w-4 h-4 text-[#25D366] transition-transform group-hover:scale-110" />
                   <span>Send Message via WhatsApp</span>
