@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #000000;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom Luxury Gold and Teal Accents */
+.bg-boutique-teal {
+  background-color: #082928;
+}
+
+.bg-boutique-teal-dark {
+  background-color: #051C1C;
+}
+
+.bg-boutique-teal-card {
+  background-color: #0B3332;
+}
+
+.border-boutique-gold {
+  border-color: #D4AF37;
+}
+
+.text-boutique-gold {
+  color: #D4AF37;
+}
+
+.text-boutique-gold-light {
+  color: #F3E5AB;
+}
+
+/* Luxury Shimmer Effect */
+@keyframes gold-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ECC876 0%, #FAF0CD 25%, #CCA342 50%, #FAF0CD 75%, #C29B38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #ECC876, #B99028) 1;
+}
+
+/* Mandala/Flourish subtle background */
+.bg-mandala-pattern {
+  background-image: radial-gradient(circle at center, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B3332;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
